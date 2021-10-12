@@ -1,0 +1,5 @@
+@import '../../styles/theme/variables';
+.test-class {
+  color: $primaryColor;
+  background: $primaryDarkerColor;
+}

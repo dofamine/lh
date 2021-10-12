@@ -1,2 +1,5 @@
-@import 'theme/variables';
-@import 'layout';
+@import 'theme/theme';
+@import 'variables';
+@import 'mixins';
+@import 'reset';
+@import 'media-queries';

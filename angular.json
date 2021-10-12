@@ -32,10 +32,8 @@
             ],
             "styles": [
               "src/styles/index.scss",
-              "src/styles/theme/theme.scss",
               "node_modules/primeicons/primeicons.css",
-              "node_modules/primeng/resources/primeng.min.css",
-              "node_modules/primeflex/primeflex.css"
+              "node_modules/primeng/resources/primeng.min.css"
             ],
             "scripts": []
           },
@@ -105,8 +103,7 @@
             "styles": [
               "src/styles.scss",
               "node_modules/primeicons/primeicons.css",
-              "node_modules/primeng/resources/primeng.min.css",
-              "node_modules/primeflex/primeflex.css"
+              "node_modules/primeng/resources/primeng.min.css"
             ],
             "scripts": []
           }
