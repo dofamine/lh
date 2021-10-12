@@ -135,7 +135,5 @@
 }
 
 .p-galleria-mask {
-  &.p-component-overlay {
-    background-color: $galleriaMaskBg;
-  }
+  --maskbg: #{$galleriaMaskBg};
 }

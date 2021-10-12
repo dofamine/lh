@@ -46,6 +46,15 @@
     }
   }
 
+  .p-paginator-page-input {
+    margin-left: $inlineSpacing;
+    margin-right: $inlineSpacing;
+
+    .p-inputtext {
+      max-width: $paginatorElementWidth;
+    }
+  }
+
   .p-paginator-current {
     background-color: $paginatorElementBg;
     border: $paginatorElementBorder;

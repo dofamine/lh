@@ -25,6 +25,8 @@ $carouselIndicatorHeight: 0.5rem;
 /// Background of a galleria modal
 /// @group media
 
+/// Background of a galleria mask
+/// @group media
 $galleriaMaskBg: rgba(0, 0, 0, 0.9);
 
 /// Margin of a galleria close icon
@@ -182,3 +184,51 @@ $galleriaThumbnailNavigatorWidth: 2rem;
 /// Height of a galleria thumbnail navigator in hover state
 /// @group media
 $galleriaThumbnailNavigatorHeight: 2rem;
+
+/// Background of an image preview modal
+/// @group media
+$imageMaskBg: rgba(0, 0, 0, 0.9) !default;
+
+/// Padding of image preview toolbar
+/// @group media
+$imagePreviewToolbarPadding: 1rem !default;
+
+/// Text color of the image preview indicator
+/// @group media
+$imagePreviewIndicatorColor: #f8f9fa !default;
+
+/// Background of the image preview indicator
+/// @group media
+$imagePreviewIndicatorBg: rgba(0, 0, 0, 0.5) !default;
+
+/// Background of an image action item
+/// @group media
+$imagePreviewActionIconBg: transparent !default;
+
+/// Text color of an image action item
+/// @group media
+$imagePreviewActionIconColor: #f8f9fa !default;
+
+/// Background of an image action item in hover state
+/// @group media
+$imagePreviewActionIconHoverBg: rgba(255, 255, 255, 0.1) !default;
+
+/// Tect color of an image action item in hover state
+/// @group media
+$imagePreviewActionIconHoverColor: #f8f9fa !default;
+
+/// Width of an image action item
+/// @group media
+$imagePreviewActionIconWidth: 3rem !default;
+
+/// Height of an image action item
+/// @group media
+$imagePreviewActionIconHeight: 3rem !default;
+
+/// Font size of an image action item icon
+/// @group media
+$imagePreviewActionIconFontSize: 1.5rem !default;
+
+/// Border radius of an image action item
+/// @group media
+$imagePreviewActionIconBorderRadius: 50% !default;

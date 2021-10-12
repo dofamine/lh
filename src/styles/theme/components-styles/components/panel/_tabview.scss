@@ -21,7 +21,7 @@
         margin: $tabviewHeaderMargin;
 
         &:not(.p-disabled):focus {
-          @include focused();
+          @include focused-inset();
         }
       }
 
@@ -53,6 +53,18 @@
 
   .p-tabview-close {
     margin-left: $inlineSpacing;
+  }
+
+  .p-tabview-nav-btn.p-link {
+    background: $tabviewHeaderActiveBg;
+    color: $tabviewHeaderTextActiveColor;
+    width: $buttonIconOnlyWidth;
+    box-shadow: $raisedButtonShadow;
+    border-radius: 0;
+
+    &:focus {
+      @include focused-inset();
+    }
   }
 
   .p-tabview-panels {

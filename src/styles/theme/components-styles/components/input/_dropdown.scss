@@ -64,6 +64,7 @@
 
     .p-dropdown-filter {
       padding-right: nth($inputPadding, 2) + $primeIconFontSize;
+      margin-right: -1 * (nth($inputPadding, 2) + $primeIconFontSize);
     }
 
     .p-dropdown-filter-icon {
