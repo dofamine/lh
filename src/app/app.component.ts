@@ -1,10 +1,15 @@
-import { Component } from "@angular/core";
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'lh-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {
-  title = "lease-hawk";
+  title = 'lease-hawk';
+
+  some(): void {
+    return;
+  }
 }

@@ -17,6 +17,6 @@ import { ButtonModule } from 'primeng/button';
     ButtonModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
