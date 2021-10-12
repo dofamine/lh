@@ -10,6 +10,7 @@ export class AppComponent {
   title = 'lease-hawk';
 
   some(): void {
+    [1,1,1].map(aaa => aaa * Math.PI);
     return;
   }
 }
