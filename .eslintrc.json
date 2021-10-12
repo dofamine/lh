@@ -1,24 +1,114 @@
 {
   "root": true,
   "ignorePatterns": [
-    "projects/**/*"
+    "projects/**/*",
+    "test.ts",
+    "polyfills.ts"
   ],
   "overrides": [
     {
       "files": [
         "*.ts"
       ],
+      "env": {
+        "browser": true,
+        "node": true,
+        "es6": true,
+        "jasmine": true
+      },
       "parserOptions": {
         "project": [
           "tsconfig.json"
         ],
         "createDefaultProgram": true
       },
+      "plugins": ["prettier"],
       "extends": [
         "plugin:@angular-eslint/recommended",
-        "plugin:@angular-eslint/template/process-inline-templates"
+        "plugin:@angular-eslint/template/process-inline-templates",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "prettier"
       ],
       "rules": {
+        "prettier/prettier": "error",
+        "array-callback-return": "error",
+        "complexity": [
+          "error",
+          2
+        ],
+        "eqeqeq": [
+          "error",
+          "always"
+        ],
+        "func-style": [
+          "error",
+          "declaration"
+        ],
+        "no-mixed-spaces-and-tabs": "error",
+        "require-await": "error",
+        "no-magic-numbers": [
+          "error",
+          {
+            "ignoreArrayIndexes": true,
+            "ignoreDefaultValues": true,
+            "ignore": [
+              0,
+              1
+            ]
+          }
+        ],
+        "id-length": [
+          "error",
+          {
+            "min": 3
+          }
+        ],
+        "max-depth": [
+          "error",
+          2
+        ],
+        "no-duplicate-imports": [
+          "error",
+          {
+            "includeExports": true
+          }
+        ],
+        "line-comment-position": [
+          "error",
+          {
+            "position": "above"
+          }
+        ],
+        "no-multi-assign": "error",
+        "max-lines": [
+          "error",
+          {
+            "max": 300,
+            "skipBlankLines": true,
+            "skipComments": true
+          }
+        ],
+        "max-nested-callbacks": [
+          "error",
+          3
+        ],
+        "max-lines-per-function": [
+          "error",
+          20
+        ],
+        "max-params": [
+          "error",
+          3
+        ],
+        "@angular-eslint/prefer-on-push-component-change-detection": "error",
+        "@angular-eslint/use-lifecycle-interface": "error",
+        "@angular-eslint/no-input-prefix": "error",
+        "@angular-eslint/no-output-on-prefix": "error",
+        "@angular-eslint/prefer-output-readonly": "error",
+        "@angular-eslint/use-pipe-transform-interface": "error",
+        "@angular-eslint/directive-class-suffix": "error",
+        "@angular-eslint/component-class-suffix": "error",
         "@angular-eslint/directive-selector": [
           "error",
           {
@@ -39,12 +129,26 @@
     },
     {
       "files": [
+        "*.spec.ts"
+      ],
+      "rules": {
+        "max-lines-per-function": "off"
+      }
+    },
+    {
+      "files": [
         "*.html"
       ],
       "extends": [
         "plugin:@angular-eslint/template/recommended"
       ],
-      "rules": {}
+      "rules": {
+        "@angular-eslint/template/no-any": "error",
+        "@angular-eslint/template/conditional-complexity": "error",
+        "@angular-eslint/template/no-call-expression": "error",
+        "@angular-eslint/template/use-track-by-function": "error",
+        "@angular-eslint/template/cyclomatic-complexity": "error"
+      }
     }
   ]
 }
