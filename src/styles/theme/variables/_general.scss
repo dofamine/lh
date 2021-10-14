@@ -1,11 +1,10 @@
 /// Font of the theme
 /// @group general
-$fontFamily: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
-  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+$fontFamily: 'Avenir', 'Helvetica Neue', sans-serif;
 
 /// Size of the font
 /// @group general
-$fontSize: 1rem;
+$fontSize: 14px;
 
 /// Thickness of the texts
 /// @group general
@@ -29,7 +28,7 @@ $highlightTextColor: $primaryTextColor;
 
 /// Radius of the corners
 /// @group general
-$borderRadius: 3px;
+$borderRadius: $defaultBorderRadius;
 
 /// Duration of the property transitions
 /// @group general

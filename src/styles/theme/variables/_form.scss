@@ -8,7 +8,7 @@ $inputBg: #ffffff;
 
 /// Font size of an input field
 /// @group form
-$inputTextFontSize: 1rem;
+$inputTextFontSize: $fontSize;
 
 /// Text color of an input field
 /// @group form
@@ -16,11 +16,11 @@ $inputTextColor: $textColor;
 
 /// Color of an icon inside an input field
 /// @group form
-$inputIconColor: $textColor;
+$inputIconColor: $greyDark;
 
 /// Border of an input field
 /// @group form
-$inputBorder: 1px solid #ced4da;
+$inputBorder: 1px solid $grey;
 
 /// Border of an input field in hover state
 /// @group form
