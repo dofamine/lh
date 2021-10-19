@@ -22,7 +22,9 @@
         ],
         "createDefaultProgram": true
       },
-      "plugins": ["prettier"],
+      "plugins": [
+        "prettier"
+      ],
       "extends": [
         "plugin:@angular-eslint/recommended",
         "plugin:@angular-eslint/template/process-inline-templates",
@@ -40,10 +42,6 @@
         "eqeqeq": [
           "error",
           "always"
-        ],
-        "func-style": [
-          "error",
-          "declaration"
         ],
         "no-mixed-spaces-and-tabs": "error",
         "require-await": "error",
@@ -74,12 +72,6 @@
             "includeExports": true
           }
         ],
-        "line-comment-position": [
-          "error",
-          {
-            "position": "above"
-          }
-        ],
         "no-multi-assign": "error",
         "max-lines": [
           "error",
@@ -95,7 +87,7 @@
         ],
         "max-lines-per-function": [
           "error",
-          20
+          30
         ],
         "max-params": [
           "error",
