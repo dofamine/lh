@@ -31,7 +31,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles/index.scss",
+              "src/styles.scss",
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeng/resources/primeng.min.css"
             ],
             "scripts": []
           },
@@ -99,7 +102,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles/index.scss",
+              "src/styles.scss",
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeng/resources/primeng.min.css"
             ],
             "scripts": []
           }
@@ -118,6 +124,7 @@
   },
   "defaultProject": "lease-hawk",
   "cli": {
+    "analytics": "730bab3f-32a8-443b-8ef7-215782fb528b",
     "defaultCollection": "@angular-eslint/schematics"
   }
 }

@@ -1,0 +1,60 @@
+$colors: (
+  'blue': #085fa2,
+  'green': #3ba208,
+  'yellow': #9da208,
+  'cyan': #089da2,
+  'pink': #a20888,
+  'indigo': #084ba2,
+  'teal': #08a29d,
+  'orange': #a27108,
+  'bluegray': #0895a2,
+  'purple': #8d08a2,
+);
+
+// Theme Specific Variables
+$primaryColor: #f37a20;
+$primaryDarkColor: #d96c1b;
+$primaryDarkerColor: #da6107;
+$primaryTextColor: #ffffff;
+
+// Custom Variables (placed here so that they can be used both inside theme files and all over the project)
+$primaryLight: #ff9647;
+$orangeFive: #e66d13;
+
+$secondaryLight: #3382dd;
+$secondary: #004e89;
+$secondaryDark: #162a3f;
+
+$white: #fff;
+$offWhite: #fbfbfc;
+$greyLighter: #f2f2f2;
+$greyLight: #eeeeee;
+$grey: #cccccc;
+$colorPinkSwan: #b2b2b2;
+$darkGray: #aaa;
+$lightGrey: #9b9b9b;
+$greyDark: #787878;
+$colorTuna: #495057;
+$greyDarker: #3d3c42;
+$colorEclipse: #363636;
+$black: #323232;
+$offBlack: #2d2c31;
+$boxShadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+
+$red: #f13b44;
+$green: #57c059;
+$blue: #4a90e2;
+
+$defaultBorderRadius: 8px;
+
+// Mandatory Designer Variables
+@import './variables/general';
+@import './variables/form';
+@import './variables/button';
+@import './variables/panel';
+@import './variables/_data';
+@import './variables/_overlay';
+@import './variables/_message';
+@import './variables/_menu';
+@import './variables/_media';
+@import './variables/_misc';

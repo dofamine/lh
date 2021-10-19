@@ -1,0 +1,21 @@
+/* Customizations to the designer theme should be defined here */
+
+.p-dropdown,
+.p-multiselect {
+  .p-dropdown-trigger,
+  .p-multiselect-trigger {
+    .pi {
+      font-size: 12px;
+    }
+  }
+}
+
+p-calendar .p-inputtext,
+.p-dropdown,
+.p-multiselect {
+  border-radius: 25px;
+}
+
+.p-multiselect {
+  color: $inputTextColor;
+}
