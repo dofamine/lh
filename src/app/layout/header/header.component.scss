@@ -1,0 +1,8 @@
+@import '../../../styles/variables';
+
+:host {
+  display: block;
+  width: 100%;
+  height: $header-bar-height;
+  background: plum;
+}

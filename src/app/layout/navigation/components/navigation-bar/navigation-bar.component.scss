@@ -1,0 +1,8 @@
+@import '../../../../../styles/variables';
+
+:host {
+  display: block;
+  width: $navigation-bar-width;
+  height: 100%;
+  background: #004e89;
+}
