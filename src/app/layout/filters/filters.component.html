@@ -1,1 +1,15 @@
-<p>filters works!</p>
+<span>Filters</span>
+<form [formGroup]="form">
+  <p-dropdown formControlName="periods" [options]="periods" placeholder="Period" optionLabel="name"></p-dropdown>
+
+  <p-multiSelect
+    formControlName="accounts"
+    placeholder="Accounts"
+    [options]="accounts"
+    optionLabel="name"
+  ></p-multiSelect>
+
+  <p-dropdown formControlName="sites" [options]="sites" placeholder="Sites" optionLabel="name"></p-dropdown>
+
+  <button pButton type="button" label="Apply" class="p-button-rounded"></button>
+</form>

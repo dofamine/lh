@@ -1,15 +1,17 @@
+@import 'src/styles/variables';
+
 .layout {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
 
-  &__container,
-  &__content {
+  &__container {
     display: flex;
     flex-grow: 1;
   }
 
   &__content {
-    flex-direction: column;
+    flex-grow: 1;
+    padding-bottom: $footer-bar-height;
   }
 }

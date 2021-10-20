@@ -1,8 +1,10 @@
 @import '../../../styles/variables';
 
 :host {
-  display: block;
   height: $footer-bar-height;
   background: #08a29d;
-  margin-top: auto;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: $navigation-bar-width;
 }
