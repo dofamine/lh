@@ -8,7 +8,6 @@ import { IFilterState } from './store/filter.reducer';
   selector: 'lh-filters',
   templateUrl: './filters.component.html',
   styleUrls: ['./filters.component.scss'],
-  viewProviders: [FiltersPresenter],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FiltersComponent {

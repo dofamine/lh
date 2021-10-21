@@ -7,6 +7,7 @@ import { MultiSelectModule } from 'primeng/multiselect';
 import { ButtonModule } from 'primeng/button';
 import { StoreModule } from '@ngrx/store';
 import { FILTER_STATE_KEY, filterReducer } from './store/filter.reducer';
+import { FiltersPresenter } from './filters.presenter';
 
 @NgModule({
   declarations: [FiltersComponent],
@@ -19,5 +20,6 @@ import { FILTER_STATE_KEY, filterReducer } from './store/filter.reducer';
     ButtonModule,
     StoreModule.forFeature(FILTER_STATE_KEY, filterReducer),
   ],
+  providers: [FiltersPresenter],
 })
 export class FiltersModule {}
