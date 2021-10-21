@@ -1,0 +1,31 @@
+<span>Filters</span>
+<form *ngIf="filterState$ | async" [formGroup]="form">
+  <p-dropdown
+    optionValue="value"
+    formControlName="period"
+    [options]="periods"
+    placeholder="Period"
+    optionLabel="name"
+  ></p-dropdown>
+
+  <p-multiSelect
+    formControlName="accounts"
+    placeholder="Accounts"
+    optionValue="value"
+    [options]="accounts"
+    optionLabel="name"
+  >
+  </p-multiSelect>
+
+  <p-multiSelect optionValue="value" formControlName="sites" [options]="sites" placeholder="Sites" optionLabel="name">
+  </p-multiSelect>
+
+  <button
+    pButton
+    [disabled]="(hasUnsavedChanges$ | async) === false"
+    type="button"
+    (click)="onFilter()"
+    label="Apply"
+    class="p-button-rounded"
+  ></button>
+</form>

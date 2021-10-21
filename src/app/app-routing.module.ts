@@ -4,6 +4,11 @@ import { LH_ROUTES } from './core/configurations/router.config';
 
 const routes: Routes = [
   {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: LH_ROUTES.dashboard,
+  },
+  {
     path: LH_ROUTES.dashboard,
     loadChildren: () => import('./pages/dashboard/dashboard.module').then((module) => module.DashboardModule),
   },
@@ -14,6 +19,10 @@ const routes: Routes = [
   {
     path: LH_ROUTES.forbidden,
     loadChildren: () => import('./pages/forbidden/forbidden.module').then((module) => module.ForbiddenModule),
+  },
+  {
+    path: '**',
+    redirectTo: LH_ROUTES.notFound,
   },
 ];
 

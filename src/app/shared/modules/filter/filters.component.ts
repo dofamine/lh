@@ -1,14 +1,22 @@
-import { Component, ChangeDetectionStrategy, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { FiltersPresenter } from './filters.presenter';
+import { FormGroup } from '@angular/forms';
+import { Observable } from 'rxjs';
+import { IFilterState } from './store/filter.reducer';
 
 @Component({
   selector: 'lh-filters',
   templateUrl: './filters.component.html',
   styleUrls: ['./filters.component.scss'],
+  viewProviders: [FiltersPresenter],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class FiltersComponent implements OnInit {
-  form: FormGroup = new FormGroup({});
+export class FiltersComponent {
+  form: FormGroup = this.presenter.form as FormGroup;
+  filterState$: Observable<IFilterState> = this.presenter.filterState$;
+  hasUnsavedChanges$: Observable<boolean> = this.presenter.hasUnsavedChanges$ as Observable<boolean>;
+
+  constructor(private readonly presenter: FiltersPresenter) {}
 
   periods = [
     { name: 'Yesterday', value: 1 },
@@ -29,13 +37,7 @@ export class FiltersComponent implements OnInit {
     { name: 'Site 4', value: 4 },
   ];
 
-  ngOnInit(): void {
-    this.createForm();
-  }
-
-  createForm(): void {
-    this.form.addControl('periods', new FormControl());
-    this.form.addControl('accounts', new FormControl());
-    this.form.addControl('sites', new FormControl());
+  onFilter(): void {
+    this.presenter.onFiltersUpdate();
   }
 }
